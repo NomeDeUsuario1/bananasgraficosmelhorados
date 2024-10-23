@@ -12,7 +12,7 @@ const graficoPizza = new Chart(ctxPizza, {
             ],
             borderColor: '#DDDDDD',
             borderWidth: 1
-        }}
+        }}}
     },
     options:{
         responsive: true,
