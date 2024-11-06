@@ -100,7 +100,7 @@ const graficoCoringa = new Chart(ctxCoringa, {
         labels: ['Sim' , 'Não' , 'Talvez' ],
         datasets: [{
             label: 'Porcentagem de alunos',
-            data: [55, 36, 9],
+            data: [55, 9, 36],
             backgroundColor: [
                 '#f05454', '#30475E', '#DDDDDD', '#222831'
             ],
