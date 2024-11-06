@@ -10,7 +10,7 @@ const graficoPizza = new Chart(ctxPizza, {
             backgroundColor: [
                 '#f05454', '#30475E', '#DDDDDD', '#222831'
             ],
-            borderColor: '#DDDDDD',
+            borderColor: '#30475E',
             borderWidth: 1
         }]
     },
@@ -71,7 +71,7 @@ const graficoWailmer = new Chart(ctxWailmer, {
             backgroundColor: [
                 '#f05454', '#30475E', '#DDDDDD', '#222831'
             ],
-            borderColor: '#DDDDDD',
+            borderColor: '#30475E',
             borderWidth: 3
         }]
     },
@@ -104,7 +104,7 @@ const graficoCoringa = new Chart(ctxCoringa, {
             backgroundColor: [
                 '#f05454', '#30475E', '#DDDDDD', '#222831'
             ],
-            borderColor: '#DDDDDD',
+            borderColor: '#30475E',
             borderWidth: 4
         }]
     },
