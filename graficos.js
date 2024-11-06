@@ -1,11 +1,11 @@
-//Gráfico de Pizza
+//Gráfico de Pizza 1
 const ctxPizza = document.getElementById('graficoPizza').getContext('2d');
 const graficoPizza = new Chart(ctxPizza, {
     type: 'pie',
     data: {
         labels: ['Sim' , 'Não' , 'Não sei' ],
         datasets: [{
-            label: '1 - Você pretende, no futuro próximo, realizar algum curso de graduação de alguma faculdade/universidade?',
+            label: 'Porcentagem de alunos',
             data: [82, 14, 4],
             backgroundColor: [
                 '#f05454', '#30475E', '#DDDDDD', '#222831'
@@ -22,58 +22,57 @@ const graficoPizza = new Chart(ctxPizza, {
             },
             title: {
                 display: true,
-                text: '1 - Você pretende, no futuro próximo, realizar algum curso de graduação de alguma faculdade/universidade?'
+                text: '1 - Você pretende realizar algum curso de graduação de alguma faculdade/universidade?'
             }
         } 
         
     }
 });
-//Gráfico de barras
-const ctxBarra = document.getElementById('graficoBarra').getContext('2d');
-const graficoBarra = new Chart(ctxBarra, {
-    type: 'bar',
+//Gráfico de Pizza 2
+const ctxBanana = document.getElementById('graficoBanana').getContext('2d');
+const graficoBanana = new Chart(ctxBanana, {
+    type: 'pie',
     data: {
         labels: ['Federal', 'Estadual', 'Paticular'],
         datasets: [{
-            label: '2 - Caso tenha interesse, que tipo de instituição tentará ingressar?',
+            label: 'Porcentagem de alunos',
             data: [37, 27, 36],
-            backgroundColor: '#F05454',
+            backgroundColor: [
+		 '#f05454', '#30475E', '#DDDDDD', '#222831',
+			],
             borderColor: '#30475E',
-            borderWidth: 1
+            borderWidth: 2
         }]
     },
     options: {
         responsive: true,
         plugins: {
             legend: {
-                position: 'top',
+                position: 'bottom',
             },
-            title: {
+             title: {
                 display: true,
                 text: '2 - Caso tenha interesse, que tipo de instituição tentará ingressar?'
             }
-        },
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
+        } 
+        
     }
 });
-//Gráfico de Pizza
-const ctxPizza = document.getElementById('graficoPizza').getContext('2d');
-const graficoPizza = new Chart(ctxPizza, {
+
+//Gráfico de Pizza 3
+const ctxWailmer = document.getElementById('graficoWailmer').getContext('2d');
+const graficoWailmer = new Chart(ctxWailmer, {
     type: 'pie',
     data: {
         labels: ['Sim' , 'Não' , 'Talvez' , 'Temporariamente'  ],
         datasets: [{
-            label: '3 - Você quer sair do país, estado ou cidade?',
-            data: [],
+            label: 'Porcentagem de alunos',
+            data: [55, 18, 23, 4],
             backgroundColor: [
                 '#f05454', '#30475E', '#DDDDDD', '#222831'
             ],
             borderColor: '#DDDDDD',
-            borderWidth: 1
+            borderWidth: 3
         }]
     },
     options:{
@@ -84,7 +83,40 @@ const graficoPizza = new Chart(ctxPizza, {
             },
             title: {
                 display: true,
-                text: '1 - Você pretende, no futuro próximo, realizar algum curso de graduação de alguma faculdade/universidade?'
+                text: '3 - Você quer sair do país, estado ou cidade?'
+            }
+        } 
+        
+    }
+});
+
+
+
+//Gráfico de Pizza 4
+const ctxCoringa = document.getElementById('graficoCoringa').getContext('2d');
+const graficoCoringa = new Chart(ctxCoringa, {
+    type: 'pie',
+    data: {
+        labels: ['Sim' , 'Não' , 'Talvez' ],
+        datasets: [{
+            label: 'Porcentagem de alunos',
+            data: [55, 36, 9],
+            backgroundColor: [
+                '#f05454', '#30475E', '#DDDDDD', '#222831'
+            ],
+            borderColor: '#DDDDDD',
+            borderWidth: 4
+        }]
+    },
+    options:{
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'bottom',
+            },
+            title: {
+                display: true,
+                text: '5 - Você pretende começar uma família?'
             }
         } 
         
